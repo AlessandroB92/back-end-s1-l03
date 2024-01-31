@@ -83,7 +83,7 @@ namespace back._end_s1_l03
                         Console.WriteLine("Il deposito minimo è di 1000. Operazione annullata.");
                         return;
                     }
-
+                    Console.Clear();
                     ContoCorrente conto = new ContoCorrente(nomeTitolare, cognomeTitolare);
                     Console.WriteLine("Conto aperto con successo!");
                     Console.WriteLine($"Conto di:  {conto.NomeCliente} {conto.CognomeCliente}");
@@ -95,6 +95,7 @@ namespace back._end_s1_l03
                     {
                         Console.WriteLine("Che operazione vuoi eseguire? (1: Preleva, 2: Versa, 3: Chiudi)");
                         int scelta = int.Parse(Console.ReadLine());
+                        Console.Clear();
 
                         switch (scelta)
                         {
@@ -170,7 +171,7 @@ namespace back._end_s1_l03
             {
                 // Chiedi all'utente la dimensione dell'array
                 Console.Write("Inserisci la dimensione dell'array: ");
-                int dimensione = Convert.ToInt32(Console.ReadLine());
+                int dimensione = int.Parse(Console.ReadLine());
 
                 // Crea un array di interi di dimensione specificata
                 int[] numeri = new int[dimensione];
@@ -179,7 +180,7 @@ namespace back._end_s1_l03
                 for (int i = 0; i < dimensione; i++)
                 {
                     Console.Write($"Inserisci il numero {i + 1}: ");
-                    numeri[i] = Convert.ToInt32(Console.ReadLine());
+                    numeri[i] = int.Parse(Console.ReadLine());
                 }
 
                 // Calcola la somma dei numeri nell'array
