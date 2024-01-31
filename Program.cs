@@ -196,6 +196,13 @@ namespace back._end_s1_l03
                 Console.WriteLine($"La somma di tutti i numeri inseriti è: {somma}");
                 Console.WriteLine($"La media aritmetica di tutti i numeri inseriti è: {media}");
             }
+
+            else 
+            {
+                Console.WriteLine("Comando inesistente!!");
+                return;
+            }
+
         }
     }
 }
